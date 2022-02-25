@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @time : 2022/2/25
+# @Author : James
+# @Email : hsiangyeeht@gmail.com
+# @file BinanceAPI.py
+
 import time
 import pandas as pd
 import requests
