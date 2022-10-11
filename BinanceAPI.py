@@ -23,7 +23,6 @@ class BinanceAPI():
         kbars = kbars.drop_duplicates(subset=['time'], keep='first')
         kbars = kbars.sort_values(by='time').reset_index(drop=True)
         kbars.time = pd.to_datetime(kbars.time / 1000, unit='s')
-        kbars['time'] = kbars['time'].dt.strftime('%Y-%m-%d %H:%m:%S')
         kbars[['open', 'high', 'low', 'close', 'volume']] = kbars[['open', 'high', 'low', 'close', 'volume']].astype('float')
         return kbars
         
